@@ -23,7 +23,8 @@ class RideRepository @Inject constructor(private val rideApi: RideApi, private v
             rideDB.getRideDao().addRides(result.body()!!)
             ridesMLD.postValue(result.body())
         } else {
-            ridesMLD.postValue(rideDB.getRideDao().getRides())
+            val tmp:List<Ride> = rideDB.getRideDao().getRides()
+            ridesMLD.postValue(tmp)
         }
     }
     suspend fun getUser(){

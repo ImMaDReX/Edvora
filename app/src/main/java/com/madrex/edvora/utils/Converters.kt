@@ -18,6 +18,7 @@ class Converters {
 //        return Date(value)
 //    }
 
+
     @TypeConverter
     fun fromListToString(stationPath: List<Int>): String {
         return stationPath.joinToString(separator = ",")

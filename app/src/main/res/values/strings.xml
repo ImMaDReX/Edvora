@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Edvora</string>
+    <string name="nearest">Nearest</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="rides">Rides : </string>
+    <string name="filters">Filters</string>
+    <string name="noRidesFound">No Rides Found</string>
 </resources>

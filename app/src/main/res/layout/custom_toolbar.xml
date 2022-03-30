@@ -17,8 +17,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp">
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
 
             <TextView
                 android:id="@+id/title"
@@ -50,11 +50,10 @@
                     android:textStyle="bold" />
 
                 <ImageView
+                    loadImageCircular="@{user.url}"
                     android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:background="@drawable/circle_bg"
-                    android:backgroundTint="@color/teal_200"
-                    android:src="ic" />
+                    android:layout_height="36dp" />
+
             </LinearLayout>
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>

@@ -1,6 +1,7 @@
 package com.madrex.edvora.model
 
 import androidx.room.Entity
+import androidx.room.Ignore
 import androidx.room.PrimaryKey
 import java.util.*
 
@@ -14,5 +15,6 @@ data class Ride(
     val map_url: String,
     val origin_station_code: Int,
     val state: String,
-    val station_path: List<Int>
+    val station_path: List<Int>,
+    var distance:Int
 )

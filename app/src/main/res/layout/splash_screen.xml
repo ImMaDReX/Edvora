@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".activities.SplashScreen">
+<layout>
 
-    <TextView
-        android:id="@+id/app"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edvora"
-        android:textColor="@color/white"
-        android:textSize="64dp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
-
-    <ProgressBar
-        android:id="@+id/progress"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:layout_below="@id/app"
-        android:layout_alignStart="@+id/app"
-        android:layout_alignEnd="@id/app"
-        android:indeterminate="true"
-        android:backgroundTint="@color/white"
-        android:visibility="gone"
-        style="?android:attr/progressBarStyleHorizontal" />
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".activities.SplashScreen">
 
+        <TextView
+            android:id="@+id/app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Edvora"
+            android:textColor="@color/white"
+            android:textSize="64dp"
+            android:textStyle="bold" />
 
-</RelativeLayout>
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_below="@id/app"
+            android:layout_alignStart="@+id/app"
+            android:layout_alignEnd="@id/app"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>
